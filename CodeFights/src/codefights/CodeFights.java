@@ -9,7 +9,7 @@ package codefights;
  *
  * @author wii64
  */
-public class CodeFights {
+public class CodeFights { 
 
     /**
      * @param args the command line arguments
