@@ -5,7 +5,7 @@
  */
 package codefights;
 
-import sudoku2.Sudoku2;
+import isCryptSolution.IsCryptSolution;
 
 /**
  *
@@ -18,19 +18,12 @@ public class CodeFights {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        char[][] sudoku=  {{'.','.','.','.','.','.','5','.','.'}, 
- {'.','.','.','.','.','.','.','.','.'}, 
- {'.','.','.','.','.','.','.','.','.'}, 
- {'9','3','.','.','2','.','4','.','.'}, 
- {'.','.','7','.','.','.','3','.','.'}, 
- {'.','.','.','.','.','.','.','.','.'}, 
- {'.','.','.','3','4','.','.','.','.'}, 
- {'.','.','.','.','.','3','.','.','.'}, 
- {'.','.','.','.','.','5','2','.','.'}};
-    ;
+        String[] crypt={"SEND","MORE","MONEY"};
+        char[][] solution = {{'O','0'},{'M','1'},{'Y','2'},{'E','5'},{'N','6'},{'D','7'},{'R','8'},{'S','9'}};
         boolean respuesta;
-        Sudoku2 s2 = new Sudoku2();
-        respuesta = s2.sudoku2(sudoku);
+        
+        IsCryptSolution ics = new IsCryptSolution();
+        respuesta = ics.isCryptSolution(crypt, solution);
         
         System.out.println(respuesta);
         
