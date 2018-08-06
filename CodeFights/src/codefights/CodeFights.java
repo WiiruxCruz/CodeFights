@@ -5,7 +5,9 @@
  */
 package codefights;
 
-import isCryptSolution.IsCryptSolution;
+import java.util.ArrayList;
+
+
 
 /**
  *
@@ -18,14 +20,14 @@ public class CodeFights {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        String[] crypt={"SEND","MORE","MONEY"};
-        char[][] solution = {{'O','0'},{'M','1'},{'Y','2'},{'E','5'},{'N','6'},{'D','7'},{'R','8'},{'S','9'}};
-        boolean respuesta;
         
-        IsCryptSolution ics = new IsCryptSolution();
-        respuesta = ics.isCryptSolution(crypt, solution);
+        ArrayList<String> aux = new ArrayList<>();
         
-        System.out.println(respuesta);
+        aux.add("a");
+        aux.add("b");
+        
+        System.out.println(aux.indexOf("a"));
+        
         
     }
     

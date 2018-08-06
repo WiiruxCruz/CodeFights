@@ -1,0 +1,22 @@
+//int[] a = {1,2,3}; //salida true
+        //int[] b = {2,1,3};
+        //int[] a = {1,1,4}; //salida false
+        //int[] b = {1,2,3};
+        
+        //int[] a = {1,2,2}; //salida true
+        //int[] b = {2,1,1};
+        
+        //int[] a = {1,2,3,4}; //salida false
+        //int[] b = {1,2,3,5}; 
+        
+        //int[] a = {1,2,3,4,5,6,7,9,8,11}; //salida ???
+        //int[] b = {9,2,3,4,5,6,7,1,8,11};
+        
+        int[] a = {2,1,2,1,1,1,2}; //salida true
+        int[] b = {1,1,2,1,2,1,2};
+        
+        boolean respuesta = true;
+        AreSimilar as = new AreSimilar();
+        respuesta = as.areSimilar(a,b);
+        
+        System.out.println(respuesta);
